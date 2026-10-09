@@ -1,0 +1,42 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}:root{--navy:#071f49;--blue:#1768ad;--ink:#17253b;--muted:#66758a;--line:#dbe5ef;--soft:#f5f8fb;--max:1180px}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);line-height:1.65}header{height:78px;position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 max(20px,calc((100vw - var(--max))/2));gap:22px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-family:Georgia,serif;font-weight:bold;font-size:20px}.brand img{width:118px;height:64px;object-fit:contain}nav{margin-left:auto;display:flex;gap:18px}nav a{text-decoration:none;color:#33455d;font-size:14px;font-weight:bold}.menu{display:none;margin-left:auto}.wrap{max-width:var(--max);margin:auto}.section{padding:112px 24px;border-bottom:1px solid #edf1f5}.alt{background:var(--soft)}.hero{padding-top:90px}.split{display:grid;grid-template-columns:1fr 1fr;gap:58px;align-items:center}.feature-split{grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);gap:42px}.identity{display:flex;gap:18px;align-items:center;margin-bottom:25px}.identity img{width:240px;height:155px;object-fit:contain}.identity h1{font:700 clamp(44px,5vw,72px)/1 Georgia,serif;color:var(--navy);margin:0}.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--blue);font-weight:bold;font-size:13px}h2{font:700 clamp(32px,4vw,52px)/1.15 Georgia,serif;color:var(--navy);margin:0 0 38px;max-width:1000px}h3{color:var(--navy)}.lead{font-size:20px;color:#4d5e74}.btn{display:inline-block;background:var(--navy);color:white;padding:11px 17px;border-radius:8px;text-decoration:none;font-weight:bold;margin-right:8px}.btn.light{background:white;color:var(--navy);border:1px solid #b9c8d8}.heroimg,.visual,.wide{width:100%;display:block;border-radius:17px;box-shadow:0 15px 42px rgba(12,38,70,.12)}figcaption{font-size:12px;color:var(--muted);margin-top:7px}.cards{display:grid;gap:18px;margin:28px 0}.two{grid-template-columns:repeat(2,1fr)}.three{grid-template-columns:repeat(3,1fr)}article{background:white;border:1px solid var(--line);border-radius:14px;padding:23px}.chain{background:#eaf3fa;border-left:4px solid var(--blue);border-radius:10px;padding:18px 22px;margin:28px 0;font-size:18px}video{display:block;width:min(900px,100%);margin:36px auto 0;border-radius:16px;background:#06162c}.wide{margin:30px 0 40px}.people{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.people article:last-child{grid-column:2}.people b{color:var(--blue);font-size:14px}.muted{color:var(--muted)}.contact{display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:28px}.contact a{color:var(--navy);font-weight:bold;text-decoration:none}footer{background:var(--navy);color:white;padding:30px 24px}footer .wrap{display:flex;justify-content:space-between;gap:20px}@media(max-width:900px){header{padding:0 18px}.brand span{display:none}.menu{display:block}.menu+nav{display:none;position:absolute;top:77px;left:0;right:0;background:white;padding:20px;flex-direction:column}.menu+nav.open{display:flex}.split{grid-template-columns:1fr}.section{padding:80px 20px}.three,.people{grid-template-columns:1fr}.people article:last-child{grid-column:auto}}@media(max-width:600px){.two{grid-template-columns:1fr}.identity img{width:82px}.identity h1{font-size:42px}}
+/* Final presentation refinements */
+.feature-split{grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);gap:42px}
+.feature-visual{width:100%;max-width:none;min-height:420px;object-fit:contain;background:#fff}
+.contributors-photo{width:100%;height:clamp(430px,47vw,650px);overflow:hidden;border-radius:17px;box-shadow:0 15px 42px rgba(12,38,70,.12);margin:30px 0 40px}
+.contributors-photo img{width:100%;height:125%;object-fit:cover;object-position:center top;display:block}
+@media(max-width:900px){.feature-split{grid-template-columns:1fr}.contributors-photo{height:58vw;min-height:300px}.brand img{width:76px;height:50px}}
+@media(max-width:600px){.identity img{width:120px;height:88px}}
+
+/* V4 requested corrections */
+.contributors-photo{height:auto;aspect-ratio:2.28/1;overflow:hidden}
+.contributors-photo img{width:100%;height:auto;object-fit:initial;transform:none;display:block}
+.facebook-link{display:inline-flex;align-items:center;margin-top:8px;color:var(--blue);font-weight:700;text-decoration:none;border-bottom:1px solid #a9c7df;padding-bottom:2px}
+.facebook-link:hover{color:var(--navy)}
+@media(max-width:900px){.contributors-photo{height:auto;min-height:0;aspect-ratio:2.1/1}}
+/* V8: tighter Home portrait crop for more balanced head-to-body proportions */
+#home .heroimg{width:100%;height:560px;object-fit:cover;object-position:center 18%;}
+@media(max-width:900px){#home .heroimg{height:min(76vw,620px);object-position:center 15%;}}
+@media(max-width:600px){#home .heroimg{height:115vw;max-height:620px;object-position:center 12%;}}
+/* V10 — clean academic/professional home */
+#home.hero{padding-top:92px;background:#fff}
+#home .split{grid-template-columns:minmax(0,1.08fr) minmax(360px,.92fr);gap:64px;align-items:center}
+#home .identity{margin-bottom:32px;align-items:center}
+#home .identity img{width:170px;height:105px;object-fit:contain;flex:0 0 auto}
+#home .identity h1{font-size:clamp(48px,5vw,72px)}
+#home h2{font-size:clamp(38px,4.1vw,58px);line-height:1.08;margin-bottom:24px;max-width:720px}
+#home .lead{max-width:680px;font-size:19px;line-height:1.7}
+#home .heroimg{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover;object-position:center;border-radius:18px;box-shadow:0 16px 42px rgba(12,38,70,.13)}
+@media(max-width:900px){#home .split{grid-template-columns:1fr;gap:38px}#home .heroimg{height:auto;aspect-ratio:1/1;max-width:650px;margin:auto}#home .identity img{width:145px;height:90px}}
+@media(max-width:600px){#home .identity{gap:12px}#home .identity img{width:105px;height:72px}#home .identity h1{font-size:42px}#home h2{font-size:36px}}
+
+/* V11: restrained intellectual property footer */
+footer .ip-note{max-width:1180px;margin:14px auto 0;color:#cbd8e7;font-size:12px;line-height:1.6}
+@media(max-width:600px){footer .wrap{flex-direction:column;gap:6px}}
+
+/* V14: ILHR branding balanced against name, desktop and mobile */
+header .brand img{width:148px;height:72px;object-fit:contain}
+header{min-height:88px;height:auto;padding-top:7px;padding-bottom:7px}
+#home .identity img{width:240px;height:146px;object-fit:contain;flex:0 0 auto}
+#home .identity{gap:20px}
+@media(max-width:900px){header .brand img{width:110px;height:64px}#home .identity img{width:190px;height:120px}}
+@media(max-width:600px){header .brand img{width:96px;height:58px}#home .identity img{width:128px;height:88px}#home .identity h1{font-size:clamp(32px,8vw,42px)}}
