@@ -1,86 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ILHR</title>
-<meta name="description" content="ILHR — home page.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#eef2f5; --ink:#12212e; --muted:#4b5d6b; --line:#c9d6e2; --accent:#2457d6; --panel:#e2e9ef;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#0f1a24;--ink:#e6edf3;--muted:#9db0bf;--line:#26394a;--accent:#7ea3ff;--panel:#16252f}
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 "Source Serif 4",Georgia,serif}
-a{color:var(--accent)}
-a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-header,main,footer{max-width:68rem;margin:0 auto;padding:0 1.5rem}
-nav{display:flex;justify-content:space-between;align-items:center;padding:1.5rem 0;font-family:"Bricolage Grotesque",Arial,sans-serif;font-weight:500}
-nav .brand{font-weight:800;text-decoration:none;color:var(--ink);letter-spacing:.02em}
-nav ul{display:flex;gap:1.5rem;list-style:none;margin:0;padding:0}
-nav ul a{color:var(--muted);text-decoration:none}
-nav ul a:hover{color:var(--accent)}
-.hero{padding:6vw 0 5vw;border-bottom:2px solid var(--ink)}
-.hero h1{font:800 clamp(6rem,30vw,22rem)/.8 "Bricolage Grotesque",Arial,sans-serif;letter-spacing:-.04em;margin:0 0 2rem;color:var(--accent)}
-.hero p{max-width:34rem;font-size:1.35rem;margin:0}
-section{padding:4rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:12rem 1fr;gap:2rem}
-section h2{font:800 1.5rem/1.2 "Bricolage Grotesque",Arial,sans-serif;margin:0}
-section p{max-width:40rem;margin:0 0 1rem}
-.panel{background:var(--panel);padding:1.25rem 1.5rem;max-width:40rem}
-footer{padding:2rem 1.5rem 3rem;color:var(--muted);font-size:1rem}
-@media (max-width:700px){
-  section{grid-template-columns:1fr;gap:1rem}
-  nav ul{gap:1rem}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
-</head>
-<body>
-<header>
-  <nav aria-label="Main">
-    <a class="brand" href="#top">ILHR</a>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
-<main id="top">
-  <div class="hero">
-    <h1>ILHR</h1>
-    <p>Welcome to ILHR. Add a one-sentence description of what you do here.</p>
-  </div>
-
-  <section id="about">
-    <h2>About</h2>
-    <div>
-      <p>Replace this text with a short introduction to ILHR: who you are, what you do, and who it is for.</p>
-      <p>Keep it to two or three sentences so visitors understand it at a glance.</p>
-    </div>
-  </section>
-
-  <section id="work">
-    <h2>Work</h2>
-    <div class="panel">
-      <p>Nothing here yet. Edit <code>index.html</code> to add your projects, publications, or news.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <div>
-      <p>Email <a href="mailto:hello@example.com">hello@example.com</a> to get in touch.</p>
-    </div>
-  </section>
-</main>
-<footer>&copy; <span id="y">2026</span> ILHR</footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Gerson Ruiz | Research & Entrepreneurship</title><link rel="stylesheet" href="styles.css"></head><body><header><a class="brand" href="#home"><img src="assets/logo.png"><span>Gerson Ruiz</span></a><button class="menu">Menu</button><nav><a href="#home">Home</a><a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#contributors">Contributors</a><a href="#writing">Writing</a><a href="#cv">Curriculum Vitae</a><a href="#contact">Contact</a></nav></header><main>
+<section id="home" class="section hero"><div class="wrap split"><div><div class="identity"><img src="assets/logo.png"><div><h1>Gerson Ruiz</h1><p class="eyebrow">Research & Entrepreneurship</p></div></div><h2>Human governance in an age of increasingly autonomous AI.</h2><p class="lead">Lawyer, researcher, and social entrepreneur working at the intersection of AI governance, institutional design, and human participation.</p><p><a class="btn" href="#research">Explore Research</a> <a class="btn light" href="#cv">View CV</a></p></div><img class="heroimg" src="assets/home.jpg"></div></section>
+<section id="about" class="section alt"><div class="wrap"><p class="eyebrow">About</p><h2>Law, public policy, human rights and institutional development.</h2><div class="split"><div><p>Gerson Ruiz brings more than 30 years of experience across law, human rights, public policy, advocacy, and institutional development in Latin America, Europe, and the United States.</p><p>A lawyer, researcher, and social entrepreneur, his work spans law, governance, administration, development, artificial intelligence, and institutional design. His professional experience includes public service in Peru, international work in Geneva, immigration and human-rights advocacy in the United States, and the development of nonprofit initiatives serving immigrant communities.</p><p>He studied law and political science at the University of Lima and pursued graduate and professional studies at George Washington University, American University, the University of the District of Columbia, Oxford University, and Duke University.</p><p>Gerson is the founder and Executive Director of Immigration Law Human Rights (ILHR). His current research examines how human contribution, participation, and governance can be preserved as artificial intelligence becomes increasingly autonomous.</p></div><figure><img class="visual" src="assets/about.jpg"></figure></div></div></section>
+<section id="research" class="section"><div class="wrap"><p class="eyebrow">Research</p><h2>Can effective human governance of advanced AI be sustained as humans become progressively less economically necessary to the systems they govern?</h2><div class="cards two"><article><h3>Acknowledge Economy (AE)</h3><p>An experimental institutional and corporate-governance model testing whether validated human contribution can remain connected to economic and institutional participation as automation reduces dependence on continuing human labor and knowledge.</p></article><article><h3>AJ-OS</h3><p>An experimental operating system for identifying, preserving, validating, and attributing contributions and connecting them to measurable organizational impact.</p></article></div><div class="chain"><b>Contribution → Participation → Governance → Control</b><br>Contribution → Event → Validation → Impact</div><video controls playsinline><source src="assets/research.mp4" type="video/mp4"></video></div></section>
+<section id="projects" class="section alt"><div class="wrap"><p class="eyebrow">Projects</p><h2>Applied institutional research.</h2><img class="wide" src="assets/projects.jpg"><div class="cards three"><article><h3>ILHR</h3><p>Public-interest nonprofit integrating immigration legal services, public education, organizational research, governance, and technology development.</p></article><article><h3>AJ-OS Pilot</h3><p>A seven-contributor experiment testing whether contribution events can be recorded, validated, and traced reproducibly without substantial founder intervention.</p></article><article><h3>AE Research Program</h3><p>Research on contribution, attribution, participation, governance capacity, collective governance, and human cooperative intelligence.</p></article></div></div></section>
+<section id="contributors" class="section"><div class="wrap"><p class="eyebrow">Contributors</p><h2>Seven perspectives, one reproducibility test.</h2><div class="contributors-photo"><img src="assets/contributors.jpg" alt="AJ-OS contributors in collaborative discussion"></div><div class="people"><article><h3>Hayden Quilty</h3><b>Senior Computer Engineer</b><p>Technical systems analysis and machine-learning applications. Relevant expertise includes technical validation, data quality, and systems integrity. These capabilities support testing whether contribution records can be evaluated consistently. Particular areas of relevance are reproducibility, error detection, and dependable experimental workflows.</p></article><article><h3>Sebastian Ruiz</h3><b>Senior Computer Engineer</b><p>Computer engineering, data systems, and analytical design. His background is relevant to structuring contribution records and improving traceability across system processes. Potential areas of contribution include information architecture, data integration, and scalable workflows. These capabilities support AJ-OS testing and future technical development.</p></article><article><h3>Alex Howe</h3><b>Data Scientist</b><p>Statistical and economic analysis, with an emphasis on measurement. Relevant areas include defining observable outcomes, examining evidence, and evaluating organizational impact. These skills can inform how AJ-OS research distinguishes recorded activity from measurable results. Quantitative assessment and methodological consistency are central to this perspective.</p></article><article><h3>Paolo Fermín</h3><b>Senior Software Engineer</b><p>Software engineering, autonomous systems, and machine learning. Relevant technical areas include software architecture, system integration, and scalability. These capabilities could support translating experimental AJ-OS workflows into a maintainable software environment. Reliability and the design of extensible systems are important considerations.</p></article><article><h3>Eracleo Huamani</h3><b>Staff Backend Engineer</b><p>Backend engineering and distributed systems, with attention to data integrity and reliability. His technical perspective is relevant to consistent event records and independent system evaluation. Areas of potential contribution include backend architecture, operational robustness, and scalability. These skills can inform the transition from manual tests to software-based processes.</p></article><article><h3>Ephraim Fermin, AICP</h3><b>Senior Planner</b><p>Professional planning and institutional systems analysis. Relevant areas include organizational design, process evaluation, and the relationship between procedures and measurable outcomes. This perspective can help examine whether proposed contribution and governance processes are understandable and workable. Institutional accountability and practical implementation are central considerations.</p></article><article><h3>Benjamin Ruiz</h3><b>Computer Science Student</b><p>Computer science student with an interest in systems testing and usability evaluation. His prospective contribution can focus on whether AJ-OS instructions are understandable to a new user. Relevant activities include documenting usability observations, identifying unclear steps, and reporting reproducibility problems. Specific responsibilities will be determined through the pilot.</p></article></div></div></section>
+<section id="writing" class="section alt"><div class="wrap"><p class="eyebrow">Writing</p><h2>What If AE Works Out?</h2><div class="split feature-split"><img class="visual feature-visual" src="assets/writing.jpg"><div><h3>Human Contribution, Institutional Governance and the Future of AI</h3><p>Employment may end; productive contribution may not—and neither must the contributor’s connection to value and governance.</p><p>The paper asks whether effective human governance of advanced AI can be sustained as humans become progressively less economically necessary to the systems they govern.</p><div class="chain"><b>Contribution → Participation → Governance → Control</b></div><p><a class="btn" href="documents/What-If-AE-Works-Out.pdf" target="_blank" rel="noopener">Read Writing Sample</a> <a class="btn light" href="documents/What-If-AE-Works-Out.pdf" download>Download PDF</a></p></div></div></div></section>
+<section id="cv" class="section"><div class="wrap"><p class="eyebrow">Curriculum Vitae</p><h2>Research, professional experience, education, projects & leadership.</h2><div class="split feature-split"><img class="visual feature-visual" src="assets/cv.jpg"><div><h3>Current Research</h3><p>Acknowledge Economy (AE) and AJ-OS.</p><h3>Experience</h3><p>Law · Government · International Organizations · Nonprofit Leadership · Institutional Design</p><h3>Education</h3><p>George Washington University · American University · University of the District of Columbia · Oxford · Duke · University of Lima</p><p><a class="btn" href="documents/Gerson-Ruiz-Curriculum-Vitae.pdf" target="_blank" rel="noopener">View CV</a> <a class="btn light" href="documents/Gerson-Ruiz-Curriculum-Vitae.pdf" download>Download CV</a></p><p><a class="facebook-link" href="https://www.facebook.com/share/1CNcrbFVyQ/?mibextid=wwXIfr" target="_blank" rel="noopener">Public Policy &amp; AI Analysis — Facebook</a></p></div></div></div></section>
+<section id="contact" class="section alt"><div class="wrap"><p class="eyebrow">Contact</p><h2>Research, policy and institutional collaboration.</h2><img class="wide" src="assets/contact.jpg"><div class="contact"><b>Washington, DC, USA</b><a href="mailto:admin@ilhrgovernance.org">admin@ilhrgovernance.org</a><a href="tel:+12022154956">(202) 215-4956</a><a href="https://www.facebook.com/share/1CNcrbFVyQ/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a></div></div></section></main><footer><div class="wrap"><b>Gerson Ruiz</b><span>© 2026 Gerson Ruiz. All rights reserved.</span></div><p class="ip-note">Acknowledge Economy (AE) and AJ-OS are research initiatives developed by Gerson Ruiz. Original written and visual materials on this website are protected by applicable copyright law.</p></footer><script src="script.js"></script></body></html>
